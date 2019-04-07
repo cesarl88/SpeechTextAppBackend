@@ -1,1 +1,1 @@
-web: gunicorn Server.config.wsgi --log-file -
+web: gunicorn SpeechToText:app 
