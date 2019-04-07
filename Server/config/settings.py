@@ -58,7 +58,9 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'corsheaders.middleware.CorsMiddleware',
-    'django.middleware.common.CommonMiddleware'
+    'django.middleware.common.CommonMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
+
 ]
 
 CORS_ORIGIN_WHITELIST = (
@@ -142,6 +144,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
+#STATIC_ROOT = 
 
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': (
@@ -159,5 +162,9 @@ EMAIL_HOST_PASSWORD = 'Testing@Njit_2019'
 EMAIL_HOST_USER = 'CS684Testing@gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
+
+import dj_database_url
+db_from_env = dj_database_url.config()
+DATABASES['default'].update(db_from_env)
 
 
