@@ -7,7 +7,7 @@
 *.pyc
 
 
-
+/Server/Files/
 
 /Server/Test/PerformanceTest/2019-*
 # Project/man
