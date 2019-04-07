@@ -3,7 +3,7 @@
 # Project/lib/
 
 */__pycache__/*
-env/
+./env/
 
 *.pyc
 
