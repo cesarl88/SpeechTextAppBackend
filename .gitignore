@@ -2,12 +2,12 @@
 # Project/include/
 # Project/lib/
 
-Project/ClassProject/__pycache__/*
+*/__pycache__/*
 
 *.pyc
 
-Project/ClassProject/Server/SpeechToText/AccountView/__pycache__/*
 
 
-Project/ClassProject/Server/Test/PerformanceTest/2019-*
+
+/Server/Test/PerformanceTest/2019-*
 # Project/man
