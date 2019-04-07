@@ -2,13 +2,9 @@
 # Project/include/
 # Project/lib/
 
-*/__pycache__/*
-./env/
-
+*/__pycache__/
+env/
 *.pyc
-
-
 /Server/Files/
-
 /Server/Test/PerformanceTest/2019-*
 # Project/man
