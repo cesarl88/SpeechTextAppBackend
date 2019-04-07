@@ -1,1 +1,1 @@
-gunicorn deployProject.wsgi --log-file -
+gunicorn Server.config.wsgi --log-file -
